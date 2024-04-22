@@ -1,0 +1,200 @@
+:host {
+    height: 100%; 
+    /* width: 100vw; Full width of the viewport */
+    display: block;
+    background-image: url('https://i.pinimg.com/originals/b0/29/9f/b0299f9c653f259d676e00a986be38e7.png'); /* Background image URL */
+    background-size: cover; /* Cover the entire container */
+    /* background-repeat: no-repeat; Do not repeat the image */
+    background-position: center; /* Center the image */
+    overflow: hidden;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    background-attachment: fixed;
+    
+}
+.heading-center {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.container {
+    width: 50%; /* Adjust the width as needed */
+    margin: auto;
+    padding: 20px;
+    /* background-color: rgba(184, 17, 17, 0.8); Use RGBA for transparency */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.heading-center {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-bottom: 10px; 
+}
+/* Search bar styles */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Input field styles within the search bar */
+.input-field {
+    width: 200px; /* Smaller width for the input field */
+    padding: 8px 12px; /* Padding for the input field */
+    border: none; /* Remove border */
+    background-color: white; /* White background */
+    font-size: 14px; /* Font size */
+    margin-right: 10px; /* Space between input field and button */
+    outline: none;
+    align-self:center;
+     /* Remove focus border on input */
+}
+
+/* Button styles within the search bar */
+.button-group .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.button-group .button:hover {
+    background-color: #0056b3;
+}
+/* Button star styles */
+.button-star {
+    background: none; /* No background color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Padding for a larger clickable area */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.button-star:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.button-star mat-icon {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #007bff; /* Initial color of the icon */
+}
+
+/* Home button styles */
+.home-icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Position the button absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    margin: 20px; /* Same margin as the heading */
+}
+
+.home-icon {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+/* Weather card styles */
+.weather-card {
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.571); /* Use RGBA for transparency */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 20px; Space below the weather card */
+    margin: 0 auto; /* Center the weather card on the page */
+}
+.daily-forecast {
+    width: 70%;
+    padding: 10px;
+    /* background-color: rgba(255, 255, 255, 0.8); Use RGBA for transparency */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    /* margin-bottom: 20px; Space below the daily forecast */
+    margin: 0 auto; /* Center the forecast container on the page */
+}
+.hourly-forecast-container {
+    padding: 10px;
+    /* background-color: rgba(255, 255, 255, 0.8); Use RGBA for transparency */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    margin: 0 auto; /* Center the forecast container on the page */
+}
+/* Daily and hourly forecast styles */
+
+.daily-forecast .forecast-box ul li {
+    list-style: none !important;
+}
+
+
+/* Item styles for daily and hourly forecasts */
+.day-item, .hour-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: white; /* Card-like appearance */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.day-item:hover, .hour-item:hover {
+    background-color: #e6e6e6; /* Change background on hover */
+}
+
+/* Toggle button styles */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Hourly forecast container */
+.hourly-forecast-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensure content remains in a single line */
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+
+/* Hour item */
+.hour-item {
+    display: inline-block; /* Treat each item as an inline-block */
+    border: 1px solid #ccc; /* Border color */
+    padding: 10px; /* Inner padding */
+    margin-right: 10px; /* Space between items */
+    border-radius: 6px; /* Rounded corners */
+    min-width: 150px; /* Adjust this value to control item width */
+    text-align: center; /* Center the text */
+    background-color: #f8f8f8; /* Light background color */
+}
+
+/* Style for the hour item headings */
+.hour-item h4 {
+    margin-bottom: 5px; /* Add space below the heading */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Make the heading bold */
+    color: #333; /* Text color */
+}
+
+/* Style for the hour item paragraphs */
+.hour-item p {
+    font-size: 12px; /* Adjust font size */
+    margin: 3px 0; /* Add space between paragraphs */
+    color: #555; /* Text color */
+}

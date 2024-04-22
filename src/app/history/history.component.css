@@ -1,0 +1,110 @@
+/* Container styling */
+.history-container {
+    height: 100vh;
+    align-items: center; /* Center contents horizontally */
+    justify-content: flex-start;
+    background-image: url('https://img.freepik.com/free-photo/photorealistic-style-clouds_23-2151058943.jpg?t=st=1713598564~exp=1713602164~hmac=e276bc7ac0cb4a340a46cc66d19fdcb5caee081453fa994a344e2786107e9b64&w=1060');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+/* Home button styling */
+.home-icon-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+/* Forecast heading styling */
+.history-heading {
+    margin-top: 0; /* Adjust top margin */
+}
+
+/* Search bar container styling */
+.search-bar-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white; /* Set text color to white */
+}
+
+/* Forecast list container with horizontal scroll */
+.history-list-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px; /* Add padding around history data */
+}
+
+/* Styling for history list */
+.history-list {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row;
+    flex-wrap: nowrap; /* Ensure single row */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for each history day */
+.history-day {
+    flex: 0 0 auto; /* Allow each list item to be its own width */
+    margin-right: 15px; /* Add space between history days */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light gray background with transparency */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Icon colors and styles */
+.history-list i,
+.city-name i {
+    color: #007bff; /* Set icon color to blue */
+    margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Style adjustments for history details */
+.history-list p {
+    margin: 0 0 5px 0; /* Remove margin and add space between paragraphs */
+    color: #333; /* Text color */
+    font-weight: normal; /* Adjust text weight */
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed; /* Stays at the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+}
+
+/* Copyright text */
+.copyright-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white; /* White text color */
+}
+
+.copyright-text mat-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Icon container */
+.icon-container {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.icon-container mat-icon {
+    color: white; /* White color */
+    cursor: pointer;
+}
+
+.icon-container mat-icon:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

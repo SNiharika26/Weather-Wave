@@ -1,0 +1,26 @@
+<!-- welcome.component.html -->
+<div class="container" @fadeInOut>
+    <div class="content">
+        <h1>Welcome to the Weather Wave</h1>
+        <p>Your one-stop destination for the latest weather updates.</p>
+        <button type="button" (click)="navigateToWeather()">Get Started</button>
+    </div>
+
+    <!-- Snowflakes -->
+    <div class="snow" *ngFor="let snowflake of snowflakes" [ngStyle]="snowflake.style" [@snowFall]="snowflake.animation">
+        
+    </div>
+</div>
+<div class="footer-container">
+    <div class="copyright-text">
+        <mat-icon>copyright</mat-icon>
+        <span>© 2024 Your Weather Wave. All rights reserved.</span>
+    </div>
+    <div class="icon-container">
+        <mat-icon>email</mat-icon>
+        <mat-icon>phone</mat-icon>
+        <mat-icon>facebook</mat-icon>
+        <mat-icon>instagram</mat-icon>
+    </div>
+    
+</div>

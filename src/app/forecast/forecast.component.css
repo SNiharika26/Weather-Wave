@@ -1,0 +1,115 @@
+/* Container styling */
+.forecast-container {
+    height: 100vh;
+    align-items: center; /* Center contents horizontally */
+    justify-content: flex-start;
+    background-image: url('https://img.freepik.com/free-photo/mesmerizing-view-orange-sunset-hills-mountains_181624-35907.jpg?t=st=1713584852~exp=1713588452~hmac=57bdfef916c781c7c8a7f8ada10b4e5765d6ad56ed05348e6ea3227c690a4466&w=900');
+    background-size: cover;
+    background-position: center;
+    
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+.forecast-container {
+    text-align: center; /* Center-align text in the container */
+}
+
+/* Home button styling */
+.home-icon-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+/* Forecast heading styling */
+.forecast-heading {
+    margin-top: 0; /* Adjust top margin */
+}
+
+/* Search bar container styling */
+.search-bar-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:blue;
+     /* Add space between search bar and forecast heading */
+}
+
+
+/* Forecast list container with horizontal scroll */
+.forecast-list-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px; /* Add padding around forecast data */
+}
+
+/* Styling for forecast list */
+.forecast-list {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row;
+    flex-wrap: nowrap; /* Ensure single row */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for each forecast day */
+.forecast-day {
+    flex: 0 0 auto; /* Allow each list item to be its own width */
+    margin-right: 15px; /* Add space between forecast days */
+    padding: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Icon colors and styles */
+.forecast-list i,
+.city-name i {
+    color: #007bff; /* Set icon color to blue */
+    margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Style adjustments for forecast details */
+.forecast-list p {
+    margin: 0 0 5px 0; /* Remove margin and add space between paragraphs */
+    color: #333; /* Text color */
+    font-weight: normal; /* Adjust text weight */
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed; /* Stays at the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+}
+
+/* Copyright text */
+.copyright-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white; /* White text color */
+}
+
+.copyright-text mat-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Icon container */
+.icon-container {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.icon-container mat-icon {
+    color: white; /* White color */
+    cursor: pointer;
+}
+
+.icon-container mat-icon:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,32 @@
+/* Main content container styles */
+.main-content {
+    padding-bottom: 40px; /* Add padding equal to the height of the footer */
+}
+
+/* Footer container styles */
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+     background-color: #f0f0f0;/* Adjust the background color as needed */
+    text-align: center;
+    border-top: 1px solid #ccc; /* Optional: Add a top border to separate the footer from the content */
+    height: 30px; /* Adjust the height as needed */
+}
+
+/* Style for the icon container */
+.icon-container mat-icon {
+    margin-right: 15px; /* Add space between the icons */
+    font-size: 15px; /* Adjust the size of the icons if needed */
+    color: black; /* Set the icon color */
+}
+
+/* Style for the copyright text container */
+.copyright-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Add space between the icon and text */
+    color: black; /* Set the text color */
+}
