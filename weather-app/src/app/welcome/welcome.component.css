@@ -1,0 +1,86 @@
+
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    position: relative; /* Relative positioning for snowflakes */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Content */
+.content {
+    text-align: center; /* Center text within the content */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.221); /* Semi-transparent background */
+    border-radius: 8px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional border */
+    max-width: 80%; /* Content width is 80% of the viewport width */
+    max-height: 80%; /* Content height is 80% of the viewport height */
+    margin-bottom: 20%;
+}
+
+/* Snowflakes */
+.snow {
+    position: absolute; /* Absolute positioning for snowflakes */
+    top: -50px; /* Start above the screen */
+    width: 5px;
+    height: 5px;
+    background-color: white; /* White color for snowflakes */
+    border-radius: 50%; /* Circular snowflakes */
+    opacity: 0.8; /* Slight transparency for snowflakes */
+    animation: fall 5s linear infinite; /* Snowfall animation */
+}
+
+/* Keyframes for snowflake animation */
+@keyframes fall {
+    from {
+        top: -50px; /* Start above the screen */
+    }
+    to {
+        top: 100%; /* Fall to the bottom of the screen */
+    }
+}
+
+/* Footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed; /* Stays at the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+}
+
+/* Copyright text */
+.copyright-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white; /* White text color */
+}
+
+.copyright-text mat-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Icon container */
+.icon-container {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.icon-container mat-icon {
+    color: white; /* White color */
+    cursor: pointer;
+}
+
+.icon-container mat-icon:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
